@@ -150,3 +150,31 @@ radiologia.forEach((item, index, array) => {
         <td>${item.prevision}</td>
     </tr>`
 });
+
+const tableTraumatologia = document.getElementById('tableTraumatologia')
+tableTraumatologia.innerHTML = ""
+
+traumatologia.forEach((item, index, array) => {
+    tableTraumatologia.innerHTML += `
+    <tr>
+        <td scope="row">${item.hora}</td>
+        <td>${item.especialista}</td>
+        <td>${item.paciente}</td>
+        <td>${item.rut}</td>
+        <td>${item.prevision}</td>
+    </tr>`
+});
+
+const tableDental = document.getElementById('tableDental')
+tableDental.innerHTML = ""
+
+dental.forEach((item, index, array) => {
+    tableDental.innerHTML += `
+    <tr>
+        <td scope="row">${item.hora}</td>
+        <td>${item.especialista}</td>
+        <td>${item.paciente}</td>
+        <td>${item.rut}</td>
+        <td>${item.prevision}</td>
+    </tr>`
+});
